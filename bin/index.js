@@ -10,7 +10,7 @@ if (args.length != 1) {
 
 // write to js file
 const fs = require('fs')
-const EXPRESS = require('./EXPRESS.js')
+const EXPRESS = require('../EXPRESS.js')
 const { execSync } = require('child_process');
 
 function genExpress(filename){
