@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+
+
 // write to js file
 const fs = require('fs')
 const EXPRESS = require('./EXPRESS.js')
