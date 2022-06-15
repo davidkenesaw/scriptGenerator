@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+const args = process.argv.slice(1);
+
+if (args.length != 1) {
+    console.error('Please enter 1 argument');
+    process.exit(1); //an error occurred
+  }
+
 
 // write to js file
 const fs = require('fs')
@@ -18,5 +25,5 @@ function genExpress(filename){
         //file written successfully
     })
 }
-genExpress("pip")
+genExpress(args.toString)
 module.exports = genExpress;
